@@ -230,13 +230,12 @@ border-radius: 20px;
 
 @media (max-width: 500px) {
     html {
-        font-size: 44%;
+        font-size: 46%;
     }
 
     header{
         padding: 2.5rem;
     }
-
     .song {
         width: 22rem;
     }
