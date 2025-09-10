@@ -35,7 +35,7 @@ for (const key in data) {
         let secDiv = document.createElement("div")
         secDiv.className = "song"
         secDiv.id = element.id
-        secDiv.innerHTML = `<img src="src/img/${element.id}.png" alt="song" class="thumb">
+        secDiv.innerHTML = `<img src="src/img/${element.id}.webp" alt="song" class="thumb">
                     <h3>${element.title}</h3>
                     <h4>${element.author}</h4>`
         div.children[1].append(secDiv)
@@ -57,6 +57,7 @@ let currSec = document.querySelector("#currSec")
 let next = document.querySelector("#for-btn")
 let prev = document.querySelector("#back-btn")
 let volBar = document.querySelector("#volume")
+let search=  document.querySelector("#search")
 // ................................
 musics = Array.from(musics)
 musics.forEach(function (x) {
@@ -144,4 +145,10 @@ seekbar.addEventListener(("change"), function () {
 })
 volBar.addEventListener(("input"), function () {
     audio.volume = volBar.value / 100
+})
+// ................
+search.addEventListener(("input"),function() {
+    if(search.value.trim()!=""){
+
+    }
 })
