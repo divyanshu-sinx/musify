@@ -174,8 +174,8 @@ footer {
     border-bottom: none;
     gap: 2rem;
     padding: 2.5rem;
-    border-radius: 8px;
-    background-color: #171717;
+border-radius: 20px;
+    background-color: #13191b;
     position: fixed;
     bottom: 3rem;
     flex-direction: column;
@@ -280,7 +280,7 @@ footer {
     }
 
     .player h4 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     .controls ion-icon {
