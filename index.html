@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify - Divyanshu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="flex">
+        <nav class="flex">
+            <a href="#" class="flex"><ion-icon name="radio-outline" class="logo"></ion-icon></a>
+            <input type="text" placeholder="Search..." id="search">
+            <a href="#" class="flex loop"><ion-icon name="person-outline" class="logo acc"></ion-icon></a>
+        </nav>
+    </header>
+    <main class="flex" style="padding-bottom: 20rem;">
+        <!-- <div class="sec1">
+            <h2>Featured Songs</h2>
+            <div class="songs flex">
+                <div class="song">
+                    <img src="src/img/101.jpg" alt="">
+                    <h3>Gata Only</h3>
+                    <h4>Calm</h4>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <footer class="flex">
+        <div class="player flex">
+            <div class="upper flex">
+                <h4>Gata only - one.mp3</h4>
+                <div class="controls flex">
+                    <button id="back-btn">
+                        <ion-icon name="play-skip-back-outline"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="play-outline" id="pp-btn"></ion-icon>
+                    </button>
+                    <button id="for-btn">
+                        <ion-icon name="play-skip-forward-outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="vol flex">
+                    <div class="timer">
+                        <p>
+                            <span id="currSec">00</span>
+                            <span id="colon">:</span>
+                            <span id="currMin">00</span> /
+                            <span id="actMin">00</span> :
+                            <span id="actSec">00</span>
+                        </p>
+                    </div>
+                    <ion-icon name="volume-medium-outline" id="vol-icon"></ion-icon>
+                    <input type="range" id="volume" value="100" min="0" max="100">
+                </div>
+            </div>
+            <input type="range" id="seekbar" value="0" min="0" max="100">
+        </div>
+    </footer>
+    <audio src=""></audio>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomosdule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+
+</html>
